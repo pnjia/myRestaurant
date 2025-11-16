@@ -14,10 +14,9 @@ class ItemFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'category_id' => fake()->numberBetween(1, 2),
             'price' => fake()->randomFloat(2, 1000, 100000),
-            'stock' => fake()->numberBetween(1, 100),
             'description' => fake()->text(),
+            'category_id' => fake()->numberBetween(1, 2),
             'img' => fake()->imageUrl(),
             'is_active' => fake()->boolean()
         ];
